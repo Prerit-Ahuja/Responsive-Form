@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}   
+
+body{
+    background-image: url('img/bg4.jpg');
+    background-size: cover;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 20px 15px;
+    background-color: black;
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 25px;
+}
+
+.navlist{
+    display: flex;
+    margin-right: 25px;
+}
+
+.navlist a{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 15px;
+    justify-content: space-between;
+}
+
+.navlist a:hover{
+    color: red;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    animation-name: link-animate;
+    animation-duration: 5s;
+}
+@keyframes link-animate{
+    from {background-color: white;}
+    to {background-color: white;}
+}
+
+.navlist a:active{
+    color: red;
+}
+
+.navlist button{
+    font-size: 18px;
+    border: 1px solid white;
+    padding: 10px;
+    margin-top: -10px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    animation-name: btn-animate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+}
+@keyframes btn-animate{
+    from{background-color: blue;}
+    to {background-color: red;}
+}
+
+.navlist button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hamburger{
+    color: white;
+    font-size: 40px;
+    margin-left: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+span{
+    color: red;
+}
+
+.home{
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.home h1{
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 10px;
+    font-size: 35px;
+} 
+
+.form-area{
+    border: 4px groove blue;
+    border-radius: 10px;
+    margin-left: 140px;
+    margin-right: 140px;
+    padding: 5px;
+    background-color: white;
+}
+
+
+.form-area section{
+    margin-top: 10px;
+}
+
+section h3{
+    font-size: 30px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.p-details{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.half{
+    width: 50%;
+    margin: 10px 0px;
+}
+
+.abc{
+    width: 250px;
+}
+
+.gender-details{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+section input{
+    border: none;
+    outline: none;
+    background:none;
+    padding: 5px;
+    /* margin-right: 20px; */
+    padding-left: 20px;
+    border-right: 4px solid grey;
+    border-bottom: 4px solid grey;
+    border-radius: 10px;
+    /* margin-left: 10px; */
+    /* width: 250px; */
+}
+
+section input:focus{
+    animation-name: example;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+}
+@keyframes example{
+   from { border: 4px solid blue;}
+   to {border: 4px solid blue; }
+}
+
+section input:hover{
+    background-color: aqua;
+    transform: scale(1.1);
+}
+
+.com input{
+    margin-right: 12px;
+}
+
+section label{
+    font-weight: 700;
+    padding-left: 25px;
+}
+
+section select{
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 12px;
+    height: 30px;
+    font-weight: 600;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 230px;
+}
+
+section select:hover{
+    background-color: aqua;
+}
+
+section select:focus{
+    animation-name: select-animate;
+    animation-duration: 2s; 
+    animation-fill-mode: forwards;
+}
+@keyframes select-animate{
+    from {border: 4px solid blue;}
+    to {border: 4px solid blue;}
+}
+
+.education-details{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+section button{
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+section #submit{
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 90px;
+    height: 50px;
+}
+
+section #reset{
+    font-size: 25px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding-right: 2px;
+    cursor: pointer;
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    justify-content: center; 
+}
+
+section #reset:hover{
+    transform: scale(1.1);
+}
+
+section #submit:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+section #submit:hover{
+    animation-name: submit-animate;
+    animation-duration: 1s; 
+    animation-fill-mode: forwards;
+}
+@keyframes submit-animate{
+    from {background-color: blue;}
+    to {background-color: green;}
+}
+
+
+section #reset:hover{
+    animation-name: reset-animate;
+    animation-duration: 1s; 
+    animation-fill-mode: forwards;
+}
+@keyframes reset-animate{
+    from {background-color: transparent;}
+    to {background-color: red;}
+}
+
+
+#gender, #education, #language, #employ, #companyType{
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 70px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    border-top: 4px groove white;
+    background-color: black;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 830px){
+    .navlist{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .home{
+        margin-top: 100px !important;
+    }
+}
+
+@media (max-width: 1036px){
+    .home h1{
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 867px){
+    .home h1{
+        font-size: 15px !important;
+    }
+}
+
+@media (max-width: 824px){
+    .home h1{
+        font-size: 10px !important;
+    }
+}
+@media (max-width: 755px){
+    .home{
+        display: none;
+    }
+}
+@media (max-width: 755px){
+    .form-area{
+        margin-top: 100px;
+    }
+}
+@media (max-width: 638px){
+    section h3{
+        font-size: 20px !important;
+    }
+}
+@media (max-width: 812px){
+    .half{
+        width: 70% !important;
+    }
+}
+@media (max-width: 550px){
+    .abc{
+        width: 200px !important;
+    }
+    section select{
+        width: 180px !important;
+    }
+}
+
+@media (max-width: 728px){
+    .form-area{
+        margin-left: 80px !important;
+        margin-right: 80px !important;
+    }
+}
+
+@media (max-width: 668px){
+    .form-area{
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+}
+
+@media (max-width: 548px){
+    .form-area{
+        margin-left: 40px !important;
+        margin-right: 40px !important;
+    }
+}
+
+@media (max-width: 500px){
+    .form-area{
+        margin-left: 70px !important;
+        margin-right: 70px !important;
+    }
+}
+
+@media (max-width: 485px){
+    .form-area{
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+    }
+}

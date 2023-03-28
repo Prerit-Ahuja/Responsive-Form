@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>CSS Survey Form</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#" class="logo">Survey<span>Form</span></a>
+        <div class="navlist">
+            <ul class="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Who we are</a></li>
+                <li><a href="#">Why us</a></li>
+                <button href="#">Apply now</button>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- Form -->
+
+    <div class="home">
+        <h1>Customer Survey Form</h1>
+    </div>
+        <div class="form-area">
+            <form>
+                <section>
+                    <h3>Personal Details</h3><br>
+                    <div class="p-details">
+                    <div class="half">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Full Name" class="abc">
+                     </div>
+                     <div class="half">
+                    <label for="dob">D.O.B</label>
+                    <input type="date" name="dob" id="dob" class="abc">
+                </div>
+                <div class="half">
+                    <label for="age">Age</label>
+                    <input type="number" placeholder="(in years)" name="age" value="20" id="age" class="abc"><br><br>
+                </div>
+            
+            <div class="half">
+                <div class="gender-details">
+                    <label>Gender:</label>
+                    <div>
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender" id="gender1">
+                </div>
+                <div>
+                    <label for="gender">Female</label>
+                    <input type="radio" name="gender" id="gender2">
+                </div>
+                <div>
+                    <label for="gender">Prefer not to say</label>
+                    <input type="radio" name="gender" id="gender3">
+                </div>
+                </div>
+                </div>
+            </div>
+                </section>
+
+                <section>
+                    <!-- Contact information section -->
+                    <br>
+                    <h3>Communication Details</h3><br>
+                    <div class="p-details">
+                        <div class="half">
+                    <label for="phone">Mobile no.</label>
+                    <input type="tel" name="phone" id="phone" placeholder="10-digit mob no." class="abc">
+                </div>
+                <div class="half">
+                    <label for="alt-phone">Alt. Mob. no.</label>
+                    <input type="tel"  name="alt-phone" id="alt-phone" placeholder="10-digit mob no." class="abc">
+                </div>
+                <div class="half">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="abc123@gmail.com" class="abc"><br><br>
+                </div>
+                </div>
+                    <label>Address:</label><br><br>
+                    <div class="p-details">
+                    <div class="half">
+                    <label for="address">House/Flat no.</label>
+                    <input type="text" name="address"  id="address1" placeholder="Flat/house no" class="abc">
+                </div>
+                <div class="half">
+                    <label for="address">City/Town</label>
+                    <input type="text" name="address"  id="address2" placeholder="city/address" class="abc">
+                </div>
+                <div class="half">
+                    <label for="address">State</label>
+                    <input type="text" name="address" id="address3" placeholder="state" class="abc"><br><br>
+                </div>
+            </div>
+                <div class="p-details">
+                    <div class="half">
+                    <label for="address">Pincode</label>
+                    <input type="text" name="address"  id="address4" placeholder="pincode" class="abc">
+                </div>
+                <div class="half">
+                    <label for="address">Country</label>
+                    <select name="country" id="country">
+                        <option value="select">Select Country</option>
+                        <option value="India">India</option>
+                        <option value="UAE">UAE</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="USA">USA</option>
+                    </div>
+                      </select>
+                </div>
+            </div>
+                </section>
+
+                <section>
+                    <!-- Education & occupation section -->
+                    <br>
+                    
+                    <h3>Education & Occupation Details</h3><br>
+                    <div class="education-details">
+                    <label>Higher Qualification </label>
+                    <label for="education">10th</label>
+                    <input type="radio" name="education" id="education1">
+                    
+                    <label for="education">12th</label>
+                    <input type="radio" name="education" id="education2">
+                    
+                    <label for="education">Graduate</label>
+                    <input type="radio" name="education" id="education3">
+                </div>
+                    <br><br>
+                    <label>Preferred Language</label>
+
+                    <label for="language">English</label>
+                    <input type="checkbox" name="language" id="language1">
+                    
+                    <label for="language">Hindi</label>
+                    <input type="checkbox" name="language" id="language2">
+                    
+                    <br><br>
+                    <label>Are you employed? </label>
+                    <label for="employ">Yes</label>
+                    <input type="radio" name="employ" id="employ1">
+                    
+                    <label for="employ">No</label>
+                    <input type="radio" name="employ" id="employ2">
+                    
+                    <br><br>
+                    <div class="p-details">
+                        <div class="half">
+                    <label for="company" id="two">Company Name</label>
+                    <input type="text" name="company" id="company" placeholder="company name" class="abc">
+                </div>
+            </div>
+                   
+                    <button onclick="alert('Form Submitted Successfully!!')" id="submit">Submit</button>
+                    <button id="reset">Reset</button>
+                
+               
+                </section>
+            </form>
+    </div>
+    <footer>
+        <p> &copy; Copyright 2023 - prerit.ahuja@axeno.co</p>
+    </footer>
+</body>
+</html>
